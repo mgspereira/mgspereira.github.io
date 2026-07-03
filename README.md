@@ -10,7 +10,7 @@ no domínio `mgspereira.github.io`.
    automaticamente na raiz do domínio).
 
 2. **Subir os arquivos** (`index.html`, `style.css`, este `README.md`):
-
+ 
    ```bash
    cd caminho/para/portfolio
    git init
