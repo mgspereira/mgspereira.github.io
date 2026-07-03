@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcelo Pereira — Analista de Dados | Power BI, Python & Automação</title>
+<meta name="description" content="Portfólio de Marcelo Pereira, Analista de Dados especializado em Power BI, DAX, Power Query, automação de processos com Python e People Analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar__inner">
+    <a href="#hero" class="navbar__brand">Marcelo Pereira</a>
+    <nav class="navbar__links">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificacoes">Certificações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== HERO (dark, inspirado no canvas do Power BI Desktop) ===================== -->
+<section id="hero" class="hero">
+  <div class="hero__grid">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Analista de Dados · BI &amp; Automação</p>
+      <h1 class="hero__title">Marcelo Pereira</h1>
+      <p class="hero__subtitle">
+        Transformo processos manuais em <span class="accent-gold">dashboards</span> e
+        <span class="accent-teal">automações</span> escaláveis — Power BI, DAX, Power Query e Python
+        aplicados a People Analytics, Recrutamento &amp; Seleção e BI Corporativo.
+      </p>
+      <div class="hero__cta">
+        <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+        <a href="#contato" class="btn btn--ghost">Contato</a>
+      </div>
+    </div>
+
+    <!-- Diagrama decorativo: star schema, referência ao projeto NBA -->
+    <div class="hero__diagram" aria-hidden="true">
+      <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" class="star-schema">
+        <line x1="240" y1="190" x2="90" y2="70"   class="star-schema__link"/>
+        <line x1="240" y1="190" x2="390" y2="70"  class="star-schema__link"/>
+        <line x1="240" y1="190" x2="60" y2="230"  class="star-schema__link"/>
+        <line x1="240" y1="190" x2="420" y2="230" class="star-schema__link"/>
+        <line x1="240" y1="190" x2="240" y2="330" class="star-schema__link"/>
+
+        <g class="star-schema__node star-schema__node--fact">
+          <rect x="180" y="160" width="120" height="60" rx="6"/>
+          <text x="240" y="185">Fato_Jogos</text>
+          <text x="240" y="203" class="star-schema__meta">48 medidas DAX</text>
+        </g>
+
+        <g class="star-schema__node">
+          <rect x="30" y="42" width="120" height="50" rx="6"/>
+          <text x="90" y="72">Dim_Times</text>
+        </g>
+        <g class="star-schema__node">
+          <rect x="330" y="42" width="120" height="50" rx="6"/>
+          <text x="390" y="72">Dim_Jogadores</text>
+        </g>
+        <g class="star-schema__node">
+          <rect x="0" y="205" width="120" height="50" rx="6"/>
+          <text x="60" y="235">Dim_Data</text>
+        </g>
+        <g class="star-schema__node">
+          <rect x="360" y="205" width="120" height="50" rx="6"/>
+          <text x="420" y="235">Dim_Estatisticas</text>
+        </g>
+        <g class="star-schema__node">
+          <rect x="180" y="305" width="120" height="50" rx="6"/>
+          <text x="240" y="335">Dim_Temporada</text>
+        </g>
+      </svg>
+      <p class="hero__diagram-caption">Star schema · 11 tabelas · 15 relacionamentos</p>
+    </div>
+  </div>
+
+  <!-- KPIs -->
+  <div class="kpis">
+    <div class="kpi">
+      <span class="kpi__value accent-gold">PL-300</span>
+      <span class="kpi__label">Power BI Data Analyst Associate</span>
+    </div>
+    <div class="kpi">
+      <span class="kpi__value accent-gold">48</span>
+      <span class="kpi__label">Medidas DAX (projeto NBA)</span>
+    </div>
+    <div class="kpi">
+      <span class="kpi__value accent-teal">3</span>
+      <span class="kpi__label">Formações: Eng. Produção, Ciência de Dados, Big Data &amp; IA</span>
+    </div>
+    <div class="kpi">
+      <span class="kpi__value accent-teal">Python</span>
+      <span class="kpi__label">Automação de processos com Selenium</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<section id="sobre" class="section">
+  <h2 class="section__title">Sobre</h2>
+  <div class="sobre">
+    <p>
+      Analista de Dados com formação em Engenharia de Produção, Ciência de Dados e Big Data &amp;
+      Inteligência Analítica. Certificado PL-300 (Power BI Data Analyst Associate), atuo hoje como
+      prestador de serviços na <strong>Universia (Grupo Santander)</strong>, com foco em Business
+      Intelligence, automação de processos e análise de negócios.
+    </p>
+    <p>
+      Minha rotina envolve desenvolvimento de dashboards em Power BI, criação de medidas DAX e
+      modelagem de dados, tratamento de dados com Power Query, automação de processos com Python
+      e extração de dados com Selenium — aplicados principalmente a People Analytics, Recrutamento
+      &amp; Seleção e Diversidade &amp; Inclusão. Meu foco é transformar processos manuais em soluções
+      automatizadas, escaláveis e orientadas por dados.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== PROJETOS ===================== -->
+<section id="projetos" class="section section--muted">
+  <h2 class="section__title">Projetos</h2>
+  <div class="projects">
+
+    <!-- Projeto 1: NBA Dashboard -->
+    <article class="project-card">
+      <div class="project-card__tags">
+        <span class="tag tag--bi">Power BI</span>
+        <span class="tag tag--bi">DAX</span>
+        <span class="tag tag--bi">MCP</span>
+      </div>
+      <h3 class="project-card__title">Dashboard NBA 2025-26</h3>
+      <p class="project-card__desc">
+        Dashboard analítico da temporada 2025-26 construído com Power BI e MCP. Modelagem em
+        star schema com 11 tabelas e 15 relacionamentos, sustentando 48 medidas DAX para
+        estatísticas de jogadores, times e evolução da temporada.
+      </p>
+      <ul class="project-card__facts">
+        <li>Star schema: 11 tabelas · 15 relacionamentos</li>
+        <li>48 medidas DAX</li>
+        <li>Construído via Power BI + MCP</li>
+      </ul>
+
+      <details class="embed-toggle">
+        <summary>Ver dashboard incorporado (Publish to Web)</summary>
+        <div class="embed-toggle__body">
+          <p class="embed-toggle__notice">
+            ⚠️ Este embed usa <strong>Publish to Web</strong> do Power BI Service: o relatório fica
+            público, sem autenticação/RLS e indexável por buscadores. Uso liberado
+            <strong>apenas para este dashboard (dados públicos da NBA)</strong>. Nunca aplicar esta
+            técnica em dashboards de Recrutamento, People Analytics ou dados corporativos
+            Universia/Santander.
+          </p>
+          <div class="embed-toggle__frame">
+            <iframe
+              title="Dashboard NBA 2025-26 — Power BI"
+              src="COLE_AQUI_O_LINK_PUBLISH_TO_WEB"
+              frameborder="0"
+              allowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+      </details>
+
+      <a class="project-card__link" href="https://github.com/mgspereira/nba-dashboard-2025-26">Repositório no GitHub →</a>
+    </article>
+
+    <!-- Projeto 2: Automação Vagas For Business -->
+    <article class="project-card">
+      <div class="project-card__tags">
+        <span class="tag tag--automation">Python</span>
+        <span class="tag tag--automation">Selenium</span>
+      </div>
+      <h3 class="project-card__title">Automação Vagas For Business</h3>
+      <p class="project-card__desc">
+        Automação de processo de vagas com Python e Selenium, estruturada em quatro módulos
+        (<code>estado.py</code>, <code>config_input.py</code>, <code>vagas_actions.py</code>,
+        <code>main.py</code>), com persistência de estado em JSON para permitir retomada de
+        execução sem reprocessar etapas concluídas.
+      </p>
+      <ul class="project-card__facts">
+        <li>Arquitetura modular (4 módulos)</li>
+        <li>Estado persistido em JSON</li>
+        <li>Selenium para interação com a interface web</li>
+      </ul>
+      <a class="project-card__link" href="https://github.com/mgspereira/automacao-vagas-for-business">Repositório no GitHub →</a>
+    </article>
+
+    <!-- Projeto 3: Pipeline de Recrutamento -->
+    <article class="project-card">
+      <div class="project-card__tags">
+        <span class="tag tag--bi">Power BI</span>
+        <span class="tag tag--bi">DAX</span>
+      </div>
+      <h3 class="project-card__title">Dashboards de Pipeline de Recrutamento</h3>
+      <p class="project-card__desc">
+        Dashboards de People Analytics para acompanhamento do funil de Recrutamento &amp;
+        Seleção, com revisão e correção de medidas DAX para garantir consistência de
+        indicadores entre etapas do pipeline.
+      </p>
+      <ul class="project-card__facts">
+        <li>Medidas DAX auditadas e corrigidas</li>
+        <li>Foco em People Analytics / R&amp;S</li>
+      </ul>
+      <a class="project-card__link" href="https://github.com/mgspereira/pipeline-recrutamento-dashboard">Repositório no GitHub →</a>
+    </article>
+
+    <!-- Projeto 4: Extração Airbnb -->
+    <article class="project-card">
+      <div class="project-card__tags">
+        <span class="tag tag--automation">Python</span>
+        <span class="tag tag--automation">Selenium</span>
+      </div>
+      <h3 class="project-card__title">Extração de Reservas Airbnb</h3>
+      <p class="project-card__desc">
+        Extração de dados de reservas via Selenium com parsing direto do JSON
+        Apollo/Relay embutido na página, em vez de seletores XPath — abordagem mais
+        resiliente a mudanças de layout do front-end.
+      </p>
+      <ul class="project-card__facts">
+        <li>Parsing de JSON Apollo/Relay</li>
+        <li>Mais robusto que seletores XPath</li>
+      </ul>
+      <a class="project-card__link" href="https://github.com/mgspereira/extracao-reservas-airbnb">Repositório no GitHub →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section">
+  <h2 class="section__title">Skills</h2>
+  <div class="skills">
+    <div class="skills__group">
+      <h3 class="skills__group-title accent-gold">Business Intelligence</h3>
+      <ul class="skills__list">
+        <li>Power BI</li>
+        <li>DAX</li>
+        <li>Power Query</li>
+        <li>Modelagem de Dados</li>
+        <li>Star Schema</li>
+      </ul>
+    </div>
+    <div class="skills__group">
+      <h3 class="skills__group-title accent-teal">Automação</h3>
+      <ul class="skills__list">
+        <li>Python</li>
+        <li>Selenium</li>
+        <li>Web Scraping</li>
+        <li>Parsing de JSON</li>
+      </ul>
+    </div>
+    <div class="skills__group">
+      <h3 class="skills__group-title">Dados &amp; Negócio</h3>
+      <ul class="skills__list">
+        <li>SQL</li>
+        <li>Definição de KPIs</li>
+        <li>People Analytics</li>
+        <li>Relatórios Executivos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICAÇÕES ===================== -->
+<section id="certificacoes" class="section section--muted">
+  <h2 class="section__title">Certificações</h2>
+  <div class="certs">
+    <div class="cert-card cert-card--done">
+      <span class="cert-card__status">Certificado</span>
+      <h3>PL-300</h3>
+      <p>Microsoft Power BI Data Analyst Associate</p>
+    </div>
+    <div class="cert-card">
+      <span class="cert-card__status">Em preparação</span>
+      <h3>DP-600 / DP-700</h3>
+      <p>Fabric Analytics Engineer / Data Engineer</p>
+    </div>
+    <div class="cert-card">
+      <span class="cert-card__status">Em preparação</span>
+      <h3>DP-750 / DP-800</h3>
+      <p>Fabric &amp; Data Platform</p>
+    </div>
+    <div class="cert-card">
+      <span class="cert-card__status">Em preparação</span>
+      <h3>AZ-900 / PL-900</h3>
+      <p>Azure Fundamentals / Power Platform Fundamentals</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section id="contato" class="section contato">
+  <h2 class="section__title">Contato</h2>
+  <p class="contato__intro">Aberto a oportunidades em BI, Analytics e Engenharia de Dados.</p>
+  <div class="contato__links">
+    <a href="mailto:mgspereira@outlook.com" class="btn btn--primary">mgspereira@outlook.com</a>
+    <a href="https://www.linkedin.com/in/marcelogomespereira" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+    <a href="https://github.com/mgspereira" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Marcelo Pereira. Construído com HTML, CSS e Power BI.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
